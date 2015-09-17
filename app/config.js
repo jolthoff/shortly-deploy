@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost');
+mongoose.connect('mongodb://SmokiesLab:eSO4sRju0aVnGz4LS05pGfh2_RwNYH0Yc0t_e6YTkkI-@ds040888.mongolab.com:40888/SmokiesLab');
 var bcrypt = require('bcrypt-nodejs');
 var Promise = require('bluebird');
 
