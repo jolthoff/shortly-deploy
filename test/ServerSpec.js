@@ -1,18 +1,21 @@
 var request = require('supertest');
 var express = require('express');
 var expect = require('chai').expect;
+var mongoose = require('mongoose');
 var app = require('../server-config.js');
 
 var db = require('../app/config');
-var User = require('../app/models/user');
-var Link = require('../app/models/link');
+//var User = require('../app/models/user');
+//var Link = require('../app/models/link');
 
 /////////////////////////////////////////////////////
 // NOTE: these tests are designed for mongo!
 /////////////////////////////////////////////////////
+var userSchema = db.userSchema; //require('../app/models/user');
+var urlSchema = db.urlSchema; //require('../app/models/link');
+var User = mongoose.model('user', userSchema);
+var Link = mongoose.model('url', urlSchema);
 
-var User = require('../app/models/user');
-var Link = require('../app/models/link');
 ('', function() {
 
   beforeEach(function(done) {
@@ -51,6 +54,7 @@ var Link = require('../app/models/link');
           .expect(200)
           .expect(function(res) {
             expect(res.body.url).to.equal('http://www.roflzoo.com/');
+            console.log("body: ", res.body)
             expect(res.body.code).to.be.ok;
           })
           .end(done);
@@ -246,4 +250,4 @@ var Link = require('../app/models/link');
 
   }); // Account Login
 
-});
+})();
