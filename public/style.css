@@ -97,6 +97,15 @@ h1 {
   margin-left: 55px;
 }
 
+.sausage {
+  background-image: url('./plain-hotdog.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 120px;
+  float: left;
+}
+
 form {
   margin: 10px;
 }
