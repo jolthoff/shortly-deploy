@@ -129,6 +129,7 @@ module.exports = function(grunt) {
       grunt.task.run(['shell:target']);
     } else {
       grunt.task.run([ 'server-dev' ]);
+      
     }
   });
 
