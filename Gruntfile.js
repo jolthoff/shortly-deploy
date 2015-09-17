@@ -126,7 +126,6 @@ module.exports = function(grunt) {
   grunt.registerTask('upload', function(n) {
     // add your production server task here
 
-    } else {
       grunt.task.run([ 'server-dev' ]);
     }
   });
