@@ -36,10 +36,6 @@ module.exports = function(grunt) {
           'public/dist/everything.min.js': ['public/dist/everything.js']
         }
       }
-      // dist: {
-      //   src: 'public/dist/everything.js',
-      //   dest: 'public/dist/everything.min.js'
-      // }
     },
 
     jshint: {
