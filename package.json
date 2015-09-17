@@ -6,7 +6,9 @@
   "repository": "",
   "license": "Proprietary",
   "private": true,
-  "engine":"0.12.0",
+  "engines": {
+    "node":"0.12.0"
+  },
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "bluebird": "1.0.8",
