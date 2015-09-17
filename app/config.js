@@ -3,7 +3,7 @@ console.log(process.env.NODE_ENV);
 if (process.env.NODE_ENV !== 'production') {
 	dbURI = 'mongodb://localhost/';
 } else if (process.env.NODE_ENV === 'production') {
-	dbURI = 'mongodb://SmokiesLab:eSO4sRju0aVnGz4LS05pGfh2_RwNYH0Yc0t_e6YTkkI-@ds040888.mongolab.com:40888/SmokiesLab'
+	dbURI = 'mongodb://heroku_qc4cj4cl:taq9s87h34peqv1a1dt2uvvmqa@ds045882.mongolab.com:45882/heroku_qc4cj4cl'
 }
 mongoose.connect(dbURI);
 var bcrypt = require('bcrypt-nodejs');
